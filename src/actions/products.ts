@@ -12,6 +12,8 @@ export async function getAllProducts(): Promise<GetAllProductsAction> {
 
 export async function getProduct(id: number): Promise<GetProductsAction> {
     const products = (await db`SELECT * FROM products WHERE id = ${id}`) as Product[]
+    console.log(products);
+
     return {
         status: 200,
         body: 'get products',

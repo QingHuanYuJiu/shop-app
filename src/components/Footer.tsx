@@ -6,7 +6,7 @@ import { Title} from '@/lib/constants'
 
 export default function Footer() {
     return (
-        <div className="border-t mt-6">
+        <div className="border-t mt-6 absolute right-0 left-0 bottom-0">
             <div className="container py-32 flex justify-between">
                 <h2 className="text-2xl">
                     <Link href="/">{Title}</Link>
@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className="flex gap-10 ">
                     <Link href="https://github.com/QingHuanYuJiu/shop-app">GitHub</Link>
 
-                    {/* {NavList.map((item, i) => (
+                    {/* { {NavList.map((item, i) => (
                         <Fragment key={item.title}>
                             {i !== 0 && <Separator orientation="vertical" />}
                             <div className="text-center">
@@ -26,7 +26,7 @@ export default function Footer() {
                                 </ul>
                             </div>
                         </Fragment>
-                    ))} */}
+                    ))} } */}
                 </div>
             </div>
         </div>
