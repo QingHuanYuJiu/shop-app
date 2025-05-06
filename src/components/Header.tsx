@@ -14,7 +14,7 @@ export default function Header() {
                     {Menulist.map((item, i) => (
                         <Fragment key={item.text}>
                             {i !== 0 && <Separator orientation="vertical" />}
-                            <Link href={`/${item.href}`}>{item.text}</Link>
+                            <Link href={item.href}>{item.text}</Link>
                         </Fragment>
                     ))}
                 </div>

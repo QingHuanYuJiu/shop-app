@@ -11,8 +11,8 @@ export default function Sort() {
 
     return (
         <div className="w-64 py-4">
-            <p className="m-5 text-xl">Sort</p>
-            <ToggleGroup className="flex-col gap-3" type="single" defaultValue="latest" onValueChange={handleChange}>
+            <p className="m-3 text-xl">Sort</p>
+            <ToggleGroup className="flex-col gap-3 pr-5" type="single" defaultValue="latest" onValueChange={handleChange}>
                 <ToggleGroupItem value="latest">Latest Arrivals</ToggleGroupItem>
                 <ToggleGroupItem value="Low">Price: Low -&gt High</ToggleGroupItem>
                 <ToggleGroupItem value="High">Price: High -&gt Low</ToggleGroupItem>

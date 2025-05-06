@@ -7,10 +7,16 @@ export type Product = {
     description: string
     image: string
     variant: string[]
-  }
+}
 
-  export type GetProductsAction = {
+export type GetAllProductsAction = {
     status: number
     body: string
     data: Product[]
-  }
+}
+
+export type GetProductsAction = {
+    status: number
+    body: string
+    data: Product
+}

@@ -18,7 +18,7 @@ function ToggleGroup({ className, variant, size, children, ...props }: React.Com
             data-slot="toggle-group"
             data-variant={variant}
             data-size={size}
-            className={cn('group/toggle-group flex w-fit items-center rounded-md data-[variant=outline]:shadow-xs', className)}
+            className={cn('group/toggle-group flex w-fit items-center  data-[variant=outline]:shadow-xs', className)}
             {...props}>
             <ToggleGroupContext.Provider value={{ variant, size }}>{children}</ToggleGroupContext.Provider>
         </ToggleGroupPrimitive.Root>
@@ -38,7 +38,7 @@ function ToggleGroupItem({ className, children, variant, size, ...props }: React
                     variant: context.variant || variant,
                     size: context.size || size
                 }),
-                'min-w-0 flex-1 shrink-0  shadow-none rounded-md  focus:z-10 focus-visible:z-10 data-[variant=outline]:border-l-0 data-[variant=outline]:first:border-l',
+                'min-w-0 flex-1 shrink-0  shadow-none rounded-md  focus:z-10 focus-visible:z-10 ',
                 className
             )}
             {...props}>

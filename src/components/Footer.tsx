@@ -11,7 +11,9 @@ export default function Footer() {
                     <Link href="/">{Title}</Link>
                 </h2>
                 <div className="flex gap-10 ">
-                    {NavList.map((item, i) => (
+                    <Link href="https://github.com/QingHuanYuJiu/shop-app">GitHub</Link>
+
+                    {/* {NavList.map((item, i) => (
                         <Fragment key={item.title}>
                             {i !== 0 && <Separator orientation="vertical" />}
                             <div className="text-center">
@@ -23,7 +25,7 @@ export default function Footer() {
                                 </ul>
                             </div>
                         </Fragment>
-                    ))}
+                    ))} */}
                 </div>
             </div>
         </div>
