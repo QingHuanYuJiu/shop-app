@@ -1,7 +1,8 @@
 import Link from 'next/link'
-import { Separator } from '@/components/ui/separator'
-import { Title, NavList } from '@/lib/constants'
-import { Fragment } from 'react'
+// import { Separator } from '@/components/ui/separator'
+import { Title} from '@/lib/constants'
+// import { Title, NavList } from '@/lib/constants'
+// import { Fragment } from 'react'
 
 export default function Footer() {
     return (
