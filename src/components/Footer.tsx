@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { Separator } from '@/components/ui/separator'
 import { Title, NavList } from '@/lib/constants'
+import { Fragment } from 'react'
+
 export default function Footer() {
     return (
         <div className="border-t mt-6">
@@ -8,11 +10,11 @@ export default function Footer() {
                 <h2 className="text-2xl">
                     <Link href="/">{Title}</Link>
                 </h2>
-                <div className="grid-cols-3 gap-10 flex">
+                <div className="flex gap-10 ">
                     {NavList.map((item, i) => (
-                        <>
+                        <Fragment key={item.title}>
                             {i !== 0 && <Separator orientation="vertical" />}
-                            <div key={item.title} className='text-center'>
+                            <div className="text-center">
                                 <span>{item.title}</span>
                                 <ul className="m-4 space-y-3 text-left">
                                     {item.list.map((items) => (
@@ -20,7 +22,7 @@ export default function Footer() {
                                     ))}
                                 </ul>
                             </div>
-                        </>
+                        </Fragment>
                     ))}
                 </div>
             </div>
